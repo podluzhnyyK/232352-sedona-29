@@ -1,12 +1,171 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  </body>
+<body class="page-body">
+  <div class="container">
+    <header class="main-header">
+      <nav class="main-nav">
+        <div class="main-nav__list-logo">
+          <img class="header-logo" src="img/logo.png" alt="Седона" title="Седона">
+        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item"><a href="#" class="main-nav__text">Информация</a></li>
+          <li class="main-nav__list-item"><a href="#" class="main-nav__text">Фото и видео</a></li>
+          <li class="main-nav__list-item"><a href="#" class="main-nav__text">Карта штата</a></li>
+          <li class="main-nav__list-item"><a href="#" class="main-nav__text">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="main-banner">
+        <img src="img/welcome.png" width="457" height="351" alt="Седона" title="Седона">
+      </section>
+      <section class="main-slogan">
+        <div class="main-slogan-box">
+          <h2 class="main-slogan-head">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="main-slogan-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
+      </section>
+      <section class="advantages-tile">
+        <div class="advantages-tile--content">
+          <h3 class="advantages-tile--head">Настоящий<br> городок</h3>
+          <p class="advantages-tile--number">— №1 —</p>
+          <p class="advantages-tile--text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+        </div>
+        <div class="advantages-tile--pic"></div>
+      </section>
+      <section class="advantages-list">
+        <div class="advantages-list-item">
+          <div>
+            <img src="img/icon-1.svg" alt="Жильё" title="Жильё" width="75" height="72">
+          </div>
+          <div>
+            <h3 class="advantages-item-head">Жильё</h3>
+            <p class="advantages-item-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </div>
+        </div>
+        <div class="advantages-list-item">
+          <div>
+            <img src="img/icon-2.svg" alt="Еда" title="Еда" width="75" height="70">
+          </div>
+          <div>
+            <h3 class="advantages-item-head">Еда</h3>
+            <p class="advantages-item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </div>
+        </div>
+        <div class="advantages-list-item">
+          <div>
+            <img src="img/icon-3.svg" alt="Сувениры" title="Сувениры" width="64" height="77">
+          </div>
+          <div>
+            <h3 class="advantages-item-head">Сувениры</h3>
+            <p class="advantages-item-text">Не только китайского, но и местного производства!</p>
+          </div>
+        </div>
+      </section>
+      <section class="advantages-tile advantages-tile__inverse">
+        <div class="advantages-tile__inverse--pic"></div>
+        <div class="advantages-tile--content">
+          <h3 class="advantages-tile--head">Там есть<br> Мост дьявола</h3>
+          <p class="advantages-tile--number">— №2 —</p>
+          <p class="advantages-tile--text">Да, по нему можно пройти! Если конечно
+            вы осмелитесь</p>
+        </div>
+      </section>
+      <section class="advantages-number-list">
+        <div class="advantages-number-list__item">
+          <h3 class="advantages-number-head">небольшая<br> площадь</h3>
+          <p class="advantages-number-number">— №3 —</p>
+          <p class="advantages-number-text">все достопримечательности находятся очень близко</p>
+        </div>
+        <div class="advantages-number-list__item">
+          <h3 class="advantages-number-head">красивая<br> дорога</h3>
+          <p class="advantages-number-number">— №4 —</p>
+          <p class="advantages-number-text">ехать в седону из лас-вегаса совсем не скучно!</p>
+        </div>
+        <div class="advantages-number-list__item">
+          <h3 class="advantages-number-head">мало<br> туристов</h3>
+          <p class="advantages-number-number">— №5 —</p>
+          <p class="advantages-number-text">большинство едет в гранд каньон и толпится там</p>
+        </div>
+      </section>
+      <section class="search-content">
+        <div class="search-content-box">
+          <h2 class="search-content-head">Заинтересовались?</h2>
+          <p class="search-content-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
+            гостиниц в седоне</p>
+        </div>
+        <div class="search-content-btn">
+          <button class="btn btn-button btn-search">поиск гостиницы в седоне</button>
+          <div class="search-popup">
+            <div class="search-popup-calendar">
+              <p class="popup-calendar-line">
+                <label class="search-popup-text" for="arrival">Дата заезда:</label>
+                <span class="calendar-wr">
+                  <input class="search-popup-text calendar" type="text" value="24 апреля 2017" id="arrival">
+                  <span class="calendar-icon"></span>
+                </span>
+              </p>
+              <p class="popup-calendar-line">
+                <label class="search-popup-text" for="departure">Дата выезда:</label>
+                <span class="calendar-wr">
+                  <input class="search-popup-text calendar" type="text" value="4 июля 2017" id="departure">
+                  <span class="calendar-icon"></span>
+                </span>
+              </p>
+            </div>
+            <div class="search-popup-number">
+              <div class="popup-number-line">
+                <label class="search-popup-text" for="adults">Взрослые:</label>
+                <div class="btn-number-box">
+                  <button class="btn-number btn-minus"></button>
+                  <input class="search-popup-text number-value" type="text" value="2" id="adults">
+                  <button class="btn-number btn-plus"></button>
+                </div>
+              </div>
+              <div class="popup-number-line">
+                <label class="search-popup-text" for="children">Дети:</label>
+                <div class="btn-number-box">
+                  <button class="btn-number btn-minus"></button>
+                  <input class="search-popup-text number-value" type="text" value="0" id="children">
+                  <button class="btn-number btn-plus"></button>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-button btn-popup">Найти</button>
+          </div>
+        </div>
+      </section>
+      <section class="map"></section>
+    </main>
+    <footer class="main-footer">
+      <div class="communication-block">
+        <p class="communication-hashtag">#visitSEDONA</p>
+        <a class="communication-tel" href="">ТЕЛ: +7(495) 666-01-66</a>
+      </div>
+      <div class="socials-list">
+        <a class="socials-item" href=""><img src="img/twitter.svg" width="17" height="17" alt="twitter"
+            title="twitter"></a>
+        <a class="socials-item" href=""><img src="img/fb-icon.svg" width="12" height="22" alt="facebook"
+            title="facebook"></a>
+        <a class="socials-item" href=""><img src="img/youtube.svg" width="20" height="16" alt="youtube"
+            title="youtube"></a>
+      </div>
+      <div class="html-academy-block">
+        <span class="html-academy-text">Website by</span>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <div class="html-academy-icon"></div>
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
