@@ -965,6 +965,7 @@ a {
 .sorting-arrow-up {
   position: relative;
   display: inline-block;
+  vertical-align: baseline;
   width: 11px;
   height: 10px;
   margin-right: 10px;
@@ -974,6 +975,7 @@ a {
 .sorting-arrow-down {
   position: relative;
   display: inline-block;
+  vertical-align: baseline;
   width: 11px;
   height: 10px;
   fill: var(--very-special-grey);
@@ -1044,6 +1046,7 @@ a {
 
 .hotels-type-text {
   display: inline-block;
+  vertical-align: baseline;
   min-width: 112px;
   margin: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -1078,6 +1081,7 @@ a {
 
 .hotels-number {
   display: inline-block;
+  vertical-align: baseline;
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-size: 14px;
@@ -1102,6 +1106,7 @@ a {
 
 .btn-details {
   display: inline-block;
+  vertical-align: baseline;
   font-size: 14px;
   line-height: 21px;
   margin-top: 16px;
@@ -1125,6 +1130,7 @@ a {
 
 .btn-booking {
   display: inline-block;
+  vertical-align: baseline;
   font-size: 14px;
   line-height: 21px;
   margin-top: 16px;
